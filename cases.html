@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>導入事例 | NFC-TS</title>
+  <meta name="description" content="NFC-TSの導入事例をご紹介します。ブライダル・ギフト・企業向けなど様々な活用実績があります。">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <span class="logo-nfc">NFC</span><span class="logo-ts">-TS</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html#features">特徴</a></li>
+          <li><a href="index.html#usecases">活用シーン</a></li>
+          <li><a href="index.html#flow">導入の流れ</a></li>
+          <li><a href="index.html#pricing">料金</a></li>
+          <li><a href="cases.html" class="active">導入事例</a></li>
+          <li><a href="contact.html" class="btn btn--sm btn--primary">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ページヘッダー -->
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="container page-hero__inner">
+      <div class="section__label">CASES</div>
+      <h1 class="page-hero__title">導入事例</h1>
+      <p class="page-hero__sub">NFC-TSをご活用いただいたお客様の事例をご紹介します。</p>
+    </div>
+  </section>
+
+  <!-- 事例一覧 -->
+  <section class="cases section">
+    <div class="container">
+
+      <!-- フィルター -->
+      <div class="cases__filter">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="bridal">ブライダル</button>
+        <button class="filter-btn" data-filter="gift">ギフト・ノベルティ</button>
+        <button class="filter-btn" data-filter="b2b">企業向け</button>
+      </div>
+
+      <div class="cases__grid" id="casesGrid">
+
+        <article class="case-card" data-category="bridal">
+          <div class="case-card__tag">ブライダル</div>
+          <div class="case-card__img case-card__img--bridal">
+            <span>💍</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">結婚式招待状へのNFC搭載</h3>
+            <p class="case-card__client">大阪府 / 婚礼事業者様</p>
+            <p class="case-card__text">従来の紙の招待状にNFCタグを埋め込み、ゲストがスマートフォンをかざすだけで動画メッセージ・会場マップ・出欠フォームにアクセスできるシステムを構築。</p>
+            <ul class="case-card__results">
+              <li>出欠回答率が従来比 <strong>2.3倍</strong> に向上</li>
+              <li>ゲストからの好評コメント多数</li>
+              <li>印刷コストは従来と同等で付加価値アップ</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="bridal">
+          <div class="case-card__tag">ブライダル</div>
+          <div class="case-card__img case-card__img--bridal2">
+            <span>📋</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">席次表・席札のデジタル化</h3>
+            <p class="case-card__client">京都府 / 式場様</p>
+            <p class="case-card__text">席次表の各席にNFCタグを搭載。ゲストが自分の席カードをタップするとその席の新郎新婦からのメッセージが表示されるパーソナライズ演出を実現。</p>
+            <ul class="case-card__results">
+              <li>ゲスト全員がタグを利用（読み取り率<strong>100%</strong>）</li>
+              <li>思い出として持ち帰るゲストが増加</li>
+              <li>SNSでの自然な拡散につながった</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="gift">
+          <div class="case-card__tag">ギフト・ノベルティ</div>
+          <div class="case-card__img case-card__img--gift">
+            <span>🎁</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">退職祝い色紙のNFC化</h3>
+            <p class="case-card__client">東京都 / 一般企業様</p>
+            <p class="case-card__text">退職者への贈り物として制作した色紙にNFCタグを搭載。同僚からの動画メッセージ集を紐づけ、色紙をかざすたびに思い出のメッセージが見られる仕組みを実現。</p>
+            <ul class="case-card__results">
+              <li>受け取った方から「一生の宝物」と大好評</li>
+              <li>社内の他部署でも採用が拡大</li>
+              <li>動画メッセージを後から追加することも可能</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="gift">
+          <div class="case-card__tag">ギフト・ノベルティ</div>
+          <div class="case-card__img case-card__img--product">
+            <span>🍶</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">特産品パッケージへの搭載</h3>
+            <p class="case-card__client">兵庫県 / 食品メーカー様</p>
+            <p class="case-card__text">地酒のパッケージにNFCタグを搭載。タップするだけで醸造家のこだわり動画・ペアリングレシピ・オンラインショップへ誘導。真贋判定機能で偽造防止も実現。</p>
+            <ul class="case-card__results">
+              <li>オンラインショップへの流入が<strong>40%増</strong></li>
+              <li>真贋判定でブランド保護を強化</li>
+              <li>リピート購入率が向上</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="b2b">
+          <div class="case-card__tag">企業向け</div>
+          <div class="case-card__img case-card__img--card">
+            <span>💼</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">NFCデジタル名刺の導入</h3>
+            <p class="case-card__client">大阪府 / IT企業様</p>
+            <p class="case-card__text">従来の紙名刺にNFCタグを搭載。タップするだけでLinkedIn・会社HP・実績ポートフォリオにアクセスできるデジタル名刺を導入。クラウドで情報をリアルタイム更新可能。</p>
+            <ul class="case-card__results">
+              <li>商談後のフォローアップ率が向上</li>
+              <li>異動・連絡先変更をカード回収なしに対応</li>
+              <li>名刺コストを<strong>年間30%削減</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="b2b">
+          <div class="case-card__tag">企業向け</div>
+          <div class="case-card__img case-card__img--event">
+            <span>🎪</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">展示会ノベルティへの活用</h3>
+            <p class="case-card__client">東京都 / 製造業様</p>
+            <p class="case-card__text">展示会で配布するノベルティにNFCタグを搭載。来場者がタップするだけで製品カタログ・デモ動画・問い合わせフォームへ誘導。読み取り数をアナリティクスで計測。</p>
+            <ul class="case-card__results">
+              <li>展示会後の問い合わせ数が<strong>2倍</strong>に増加</li>
+              <li>読み取りデータで関心度の高い来場者を特定</li>
+              <li>追客の精度が大幅に向上</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-section__bg"></div>
+    <div class="container cta-section__inner">
+      <h2 class="cta-section__title">あなたのビジネスに<br><span class="gradient-text">NFC-TS</span>を取り入れませんか？</h2>
+      <p class="cta-section__text">業種・用途に合わせた最適なプランをご提案します。まずはお気軽にご相談ください。</p>
+      <a href="contact.html" class="btn btn--primary btn--xl">無料相談・資料請求はこちら</a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <span class="logo-nfc">NFC</span><span class="logo-ts">-TS</span>
+          </a>
+          <p class="footer__tagline">NFCタグ×クラウドで広がる新しい価値提供</p>
+          <p class="footer__company">提供：谷口松雄堂</p>
+        </div>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="index.html#features">特徴</a></li>
+            <li><a href="index.html#usecases">活用シーン</a></li>
+            <li><a href="index.html#flow">導入の流れ</a></li>
+            <li><a href="index.html#pricing">料金</a></li>
+            <li><a href="cases.html">導入事例</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 谷口松雄堂 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
