@@ -48,111 +48,117 @@
       <!-- フィルター -->
       <div class="cases__filter">
         <button class="filter-btn active" data-filter="all">すべて</button>
-        <button class="filter-btn" data-filter="bridal">ブライダル</button>
-        <button class="filter-btn" data-filter="gift">ギフト・ノベルティ</button>
-        <button class="filter-btn" data-filter="b2b">企業向け</button>
+        <button class="filter-btn" data-filter="wamono">和小物</button>
+        <button class="filter-btn" data-filter="gift">ギフト・贈答</button>
+        <button class="filter-btn" data-filter="card">カード・名刺</button>
       </div>
 
       <div class="cases__grid" id="casesGrid">
 
-        <article class="case-card" data-category="bridal">
-          <div class="case-card__tag">ブライダル</div>
+        <!-- 御朱印帳 -->
+        <article class="case-card" data-category="wamono">
+          <div class="case-card__tag">和小物</div>
           <div class="case-card__img case-card__img--bridal">
-            <span>💍</span>
+            <span>📖</span>
           </div>
           <div class="case-card__body">
-            <h3 class="case-card__title">結婚式招待状へのNFC搭載</h3>
-            <p class="case-card__client">大阪府 / 婚礼事業者様</p>
-            <p class="case-card__text">従来の紙の招待状にNFCタグを埋め込み、ゲストがスマートフォンをかざすだけで動画メッセージ・会場マップ・出欠フォームにアクセスできるシステムを構築。</p>
+            <h3 class="case-card__title">御朱印帳へのNFC搭載</h3>
+            <p class="case-card__client">京都府 / 神社・仏閣様</p>
+            <p class="case-card__text">谷口松雄堂製の御朱印帳にNFCタグを内蔵。スマートフォンをかざすだけで、境内の由緒・ご神体の解説動画・限定デジタル御朱印コレクションにアクセスできる体験を提供。授与所での販売単価も向上。</p>
             <ul class="case-card__results">
-              <li>出欠回答率が従来比 <strong>2.3倍</strong> に向上</li>
-              <li>ゲストからの好評コメント多数</li>
-              <li>印刷コストは従来と同等で付加価値アップ</li>
+              <li>授与所での御朱印帳の販売数が<strong>1.8倍</strong>に増加</li>
+              <li>デジタルコンテンツの季節ごと更新で参拝リピーターが増加</li>
+              <li>観光客の滞在時間・SNS投稿数が増加</li>
             </ul>
           </div>
         </article>
 
-        <article class="case-card" data-category="bridal">
-          <div class="case-card__tag">ブライダル</div>
-          <div class="case-card__img case-card__img--bridal2">
-            <span>📋</span>
-          </div>
-          <div class="case-card__body">
-            <h3 class="case-card__title">席次表・席札のデジタル化</h3>
-            <p class="case-card__client">京都府 / 式場様</p>
-            <p class="case-card__text">席次表の各席にNFCタグを搭載。ゲストが自分の席カードをタップするとその席の新郎新婦からのメッセージが表示されるパーソナライズ演出を実現。</p>
-            <ul class="case-card__results">
-              <li>ゲスト全員がタグを利用（読み取り率<strong>100%</strong>）</li>
-              <li>思い出として持ち帰るゲストが増加</li>
-              <li>SNSでの自然な拡散につながった</li>
-            </ul>
-          </div>
-        </article>
-
+        <!-- 色紙 -->
         <article class="case-card" data-category="gift">
-          <div class="case-card__tag">ギフト・ノベルティ</div>
-          <div class="case-card__img case-card__img--gift">
-            <span>🎁</span>
+          <div class="case-card__tag">ギフト・贈答</div>
+          <div class="case-card__img case-card__img--bridal2">
+            <span>🖌️</span>
           </div>
           <div class="case-card__body">
-            <h3 class="case-card__title">退職祝い色紙のNFC化</h3>
-            <p class="case-card__client">東京都 / 一般企業様</p>
-            <p class="case-card__text">退職者への贈り物として制作した色紙にNFCタグを搭載。同僚からの動画メッセージ集を紐づけ、色紙をかざすたびに思い出のメッセージが見られる仕組みを実現。</p>
+            <h3 class="case-card__title">NFC色紙で動画メッセージを届ける</h3>
+            <p class="case-card__client">関西圏 / 企業・団体様</p>
+            <p class="case-card__text">退職・卒業・受賞などの節目に贈る色紙にNFCタグを搭載。紙面のメッセージに加え、スマートフォンをかざすと同僚・仲間からの動画メッセージ集が再生される「動く色紙」を実現。</p>
             <ul class="case-card__results">
               <li>受け取った方から「一生の宝物」と大好評</li>
-              <li>社内の他部署でも採用が拡大</li>
-              <li>動画メッセージを後から追加することも可能</li>
+              <li>動画メッセージを後から追加できる機能が喜ばれる</li>
+              <li>社内の他部署・他拠点でも口コミで採用が拡大</li>
             </ul>
           </div>
         </article>
 
-        <article class="case-card" data-category="gift">
-          <div class="case-card__tag">ギフト・ノベルティ</div>
-          <div class="case-card__img case-card__img--product">
-            <span>🍶</span>
-          </div>
-          <div class="case-card__body">
-            <h3 class="case-card__title">特産品パッケージへの搭載</h3>
-            <p class="case-card__client">兵庫県 / 食品メーカー様</p>
-            <p class="case-card__text">地酒のパッケージにNFCタグを搭載。タップするだけで醸造家のこだわり動画・ペアリングレシピ・オンラインショップへ誘導。真贋判定機能で偽造防止も実現。</p>
-            <ul class="case-card__results">
-              <li>オンラインショップへの流入が<strong>40%増</strong></li>
-              <li>真贋判定でブランド保護を強化</li>
-              <li>リピート購入率が向上</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="case-card" data-category="b2b">
-          <div class="case-card__tag">企業向け</div>
+        <!-- プラスチックカード -->
+        <article class="case-card" data-category="card">
+          <div class="case-card__tag">カード・名刺</div>
           <div class="case-card__img case-card__img--card">
-            <span>💼</span>
+            <span>💳</span>
           </div>
           <div class="case-card__body">
-            <h3 class="case-card__title">NFCデジタル名刺の導入</h3>
-            <p class="case-card__client">大阪府 / IT企業様</p>
-            <p class="case-card__text">従来の紙名刺にNFCタグを搭載。タップするだけでLinkedIn・会社HP・実績ポートフォリオにアクセスできるデジタル名刺を導入。クラウドで情報をリアルタイム更新可能。</p>
+            <h3 class="case-card__title">プラスチックカードへのNFC内蔵</h3>
+            <p class="case-card__client">大阪府 / 小売・サービス業様</p>
+            <p class="case-card__text">会員証・ポイントカードにNFCタグを内蔵。カードをかざすだけでポイント確認・クーポン取得・限定コンテンツへのアクセスが可能に。カード表面のデザインは変えずにデジタル機能を追加。</p>
             <ul class="case-card__results">
-              <li>商談後のフォローアップ率が向上</li>
-              <li>異動・連絡先変更をカード回収なしに対応</li>
-              <li>名刺コストを<strong>年間30%削減</strong></li>
+              <li>カードのタップ利用率 <strong>67%</strong>（3ヶ月後）</li>
+              <li>クーポン利用率が紙クーポン比 <strong>2.4倍</strong> に向上</li>
+              <li>来店頻度・客単価ともに改善</li>
             </ul>
           </div>
         </article>
 
-        <article class="case-card" data-category="b2b">
-          <div class="case-card__tag">企業向け</div>
+        <!-- 名刺 -->
+        <article class="case-card" data-category="card">
+          <div class="case-card__tag">カード・名刺</div>
           <div class="case-card__img case-card__img--event">
-            <span>🎪</span>
+            <span>🪪</span>
           </div>
           <div class="case-card__body">
-            <h3 class="case-card__title">展示会ノベルティへの活用</h3>
-            <p class="case-card__client">東京都 / 製造業様</p>
-            <p class="case-card__text">展示会で配布するノベルティにNFCタグを搭載。来場者がタップするだけで製品カタログ・デモ動画・問い合わせフォームへ誘導。読み取り数をアナリティクスで計測。</p>
+            <h3 class="case-card__title">NFC内蔵デジタル名刺の導入</h3>
+            <p class="case-card__client">京都府・大阪府 / IT・コンサル企業様</p>
+            <p class="case-card__text">従来の名刺にNFCタグを搭載し、タップするだけで会社HP・実績ポートフォリオ・SNSプロフィールへ誘導。異動・担当変更時もクラウドから即時更新でき、名刺を刷り直す必要がなくなった。</p>
             <ul class="case-card__results">
-              <li>展示会後の問い合わせ数が<strong>2倍</strong>に増加</li>
-              <li>読み取りデータで関心度の高い来場者を特定</li>
-              <li>追客の精度が大幅に向上</li>
+              <li>商談後のWeb訪問率が<strong>3.1倍</strong>に増加</li>
+              <li>名刺の印刷・管理コストを<strong>年間35%削減</strong></li>
+              <li>「記憶に残る名刺」として商談先での話題に</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 一筆箋 -->
+        <article class="case-card" data-category="wamono">
+          <div class="case-card__tag">和小物</div>
+          <div class="case-card__img case-card__img--product">
+            <span>✉️</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">一筆箋・和紙レターへのNFC活用</h3>
+            <p class="case-card__client">京都府 / 和文具ブランド様</p>
+            <p class="case-card__text">高品質な和紙一筆箋の台紙裏面にNFCタグを貼付。お礼状や贈り物に添えた一筆箋をかざすと、贈り手からの動画メッセージや限定デジタルコンテンツが届く「書く＋デジタル」の新しい体験を提案。</p>
+            <ul class="case-card__results">
+              <li>ギフト用途での購入比率が<strong>40%増</strong></li>
+              <li>「また使いたい」リピート購入率が向上</li>
+              <li>プレミアムラインとして単価アップに成功</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 扇子（追加） -->
+        <article class="case-card" data-category="wamono">
+          <div class="case-card__tag">和小物</div>
+          <div class="case-card__img case-card__img--gift">
+            <span>🪭</span>
+          </div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">NFC搭載扇子でブランドストーリーを届ける</h3>
+            <p class="case-card__client">京都府 / 観光・物販事業者様</p>
+            <p class="case-card__text">谷口松雄堂の扇子にNFCタグを内蔵。かざすだけで職人の制作工程動画・素材のこだわり解説・コーディネート提案を届け、土産物から「体験価値のある工芸品」へとポジションアップ。</p>
+            <ul class="case-card__results">
+              <li>土産物売上が前年比<strong>22%増</strong></li>
+              <li>インバウンド客からの評価が特に高い</li>
+              <li>コンテンツを季節ごとに更新しリピーター獲得</li>
             </ul>
           </div>
         </article>
@@ -179,22 +185,23 @@
           <a href="index.html" class="footer__logo">
             <span class="logo-nfc">NFC</span><span class="logo-ts">-TS</span>
           </a>
-          <p class="footer__tagline">NFCタグ×クラウドで広がる新しい価値提供</p>
-          <p class="footer__company">提供：谷口松雄堂</p>
+          <p class="footer__tagline">京都の老舗和小物メーカーが届ける次世代体験</p>
+          <p class="footer__company">株式会社谷口松雄堂</p>
+          <p class="footer__company" style="margin-top:6px; font-size:12px;">〒601-8417 京都市南区西九条東柳ノ内町58<br>TEL: <a href="tel:0756613141" style="color:rgba(255,255,255,0.6);">075-661-3141</a></p>
         </div>
         <nav class="footer__nav">
           <ul>
-            <li><a href="index.html#features">特徴</a></li>
-            <li><a href="index.html#usecases">活用シーン</a></li>
-            <li><a href="index.html#flow">導入の流れ</a></li>
-            <li><a href="index.html#pricing">料金</a></li>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="features.html">機能詳細</a></li>
+            <li><a href="pricing.html">料金プラン</a></li>
             <li><a href="cases.html">導入事例</a></li>
             <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="https://www.taniguchi.co.jp/" target="_blank" rel="noopener">谷口松雄堂公式サイト</a></li>
           </ul>
         </nav>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2024 谷口松雄堂 All Rights Reserved.</p>
+        <p>&copy; 2025 株式会社谷口松雄堂 All Rights Reserved.</p>
       </div>
     </div>
   </footer>
