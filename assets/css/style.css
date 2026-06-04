@@ -1,26 +1,29 @@
-/* =========================================
+﻿/* =========================================
    NFC-TS サイト スタイルシート
    ========================================= */
 
 /* --- CSS変数 --- */
 :root {
-  --color-primary: #0066FF;
-  --color-primary-dark: #0052cc;
-  --color-primary-light: #3385ff;
-  --color-accent: #00C4FF;
-  --color-dark: #0A0E1A;
-  --color-dark-2: #111827;
-  --color-dark-3: #1F2937;
-  --color-gray: #F5F7FB;
-  --color-gray-2: #E5E7EB;
-  --color-gray-3: #9CA3AF;
-  --color-text: #1a2340;
-  --color-text-light: #6B7280;
+  /* 谷口松雄堂ブランドカラー（スレートネイビー＋オレンジ） */
+  --color-primary: #2F4A5B;
+  --color-primary-dark: #233A48;
+  --color-primary-light: #4D7286;
+  --color-accent: #E35329;
+  --color-accent-light: #ED8A63;
+  --color-dark: #1C2E37;
+  --color-dark-2: #233A46;
+  --color-dark-3: #2F4A5B;
+  --color-gray: #F4F5F3;
+  --color-gray-2: #E3E5E2;
+  --color-gray-3: #9CA3A0;
+  --color-text: #333333;
+  --color-text-light: #757B80;
   --color-white: #FFFFFF;
-  --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00C4FF 100%);
-  --gradient-dark: linear-gradient(135deg, #0A0E1A 0%, #1a2340 100%);
-  --shadow-sm: 0 2px 8px rgba(0, 102, 255, 0.08);
-  --shadow-md: 0 8px 30px rgba(0, 102, 255, 0.12);
+  --gradient-primary: linear-gradient(135deg, #2F4A5B 0%, #4D7286 100%);
+  --gradient-accent: linear-gradient(135deg, #E35329 0%, #ED8A63 100%);
+  --gradient-dark: linear-gradient(135deg, #1C2E37 0%, #2F4A5B 100%);
+  --shadow-sm: 0 2px 8px rgba(47, 74, 91, 0.08);
+  --shadow-md: 0 8px 30px rgba(47, 74, 91, 0.14);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.10);
   --border-accent: 5px solid var(--color-primary);
   --radius-sm: 8px;
@@ -87,7 +90,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .section--dark .section__desc { color: #9CA3AF; }
 .gradient-text {
-  background: var(--gradient-primary);
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -112,11 +115,11 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .btn--primary {
   background: var(--gradient-primary);
   color: var(--color-white);
-  box-shadow: 0 4px 20px rgba(0, 102, 255, 0.35);
+  box-shadow: 0 4px 20px rgba(47, 74, 91, 0.35);
 }
 .btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 102, 255, 0.45);
+  box-shadow: 0 8px 30px rgba(47, 74, 91, 0.45);
 }
 .btn--ghost {
   background: transparent;
@@ -224,8 +227,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0,102,255,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,102,255,0.06) 1px, transparent 1px);
+    linear-gradient(rgba(47,74,91,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47,74,91,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 .hero__orb {
@@ -236,14 +239,15 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .hero__orb--1 {
   width: 600px; height: 600px;
-  background: radial-gradient(circle, #0066FF 0%, transparent 70%);
+  background: radial-gradient(circle, #2F4A5B 0%, transparent 70%);
   top: -200px; right: -100px;
   animation: float 8s ease-in-out infinite;
 }
 .hero__orb--2 {
   width: 400px; height: 400px;
-  background: radial-gradient(circle, #00C4FF 0%, transparent 70%);
+  background: radial-gradient(circle, #E35329 0%, transparent 70%);
   bottom: -100px; left: -50px;
+  opacity: 0.22;
   animation: float 10s ease-in-out infinite reverse;
 }
 @keyframes float {
@@ -264,8 +268,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .hero__badge {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(0,196,255,0.15);
-  border: 1px solid rgba(0,196,255,0.35);
+  background: rgba(227,83,41,0.15);
+  border: 1px solid rgba(227,83,41,0.35);
   border-radius: 50px;
   font-size: 13px;
   color: var(--color-accent);
@@ -354,9 +358,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-weight: 700;
   color: var(--color-primary);
   padding: 16px 32px;
-  background: rgba(0,102,255,0.06);
+  background: rgba(47,74,91,0.06);
   border-radius: 50px;
-  border: 2px dashed rgba(0,102,255,0.3);
+  border: 2px dashed rgba(47,74,91,0.3);
 }
 .arrow-down::before { content: '▼'; }
 
@@ -392,8 +396,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .feature-card:hover::before { opacity: 1; }
 .feature-card--accent {
-  background: linear-gradient(135deg, #EFF6FF 0%, #E0F2FE 100%);
-  border-color: rgba(0,102,255,0.25);
+  background: linear-gradient(135deg, #EEF2F4 0%, #DCE5EA 100%);
+  border-color: rgba(47,74,91,0.25);
 }
 .feature-card__num {
   font-family: var(--font-en);
@@ -482,7 +486,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .usecase-card__img--bridal { background: linear-gradient(135deg, #ede9ff 0%, #c4b5fd 100%); }
 .usecase-card__img--gift { background: linear-gradient(135deg, #fff0f6 0%, #fbb6ce 100%); }
-.usecase-card__img--b2b { background: linear-gradient(135deg, #e0f2fe 0%, #93c5fd 100%); }
+.usecase-card__img--b2b { background: linear-gradient(135deg, #DCE5EA 0%, #93c5fd 100%); }
 .usecase-card__body { padding: 32px; }
 .usecase-card__body h3 {
   font-size: 20px;
@@ -494,8 +498,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .usecase-card__body ul { display: flex; flex-wrap: wrap; gap: 8px; }
 .usecase-card__body li {
   padding: 4px 14px;
-  background: rgba(0, 102, 255, 0.07);
-  border: 1px solid rgba(0, 102, 255, 0.2);
+  background: rgba(47, 74, 91, 0.07);
+  border: 1px solid rgba(47, 74, 91, 0.2);
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
@@ -570,7 +574,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-size: 12px;
   font-weight: 700;
   color: var(--color-primary);
-  background: rgba(0,102,255,0.08);
+  background: rgba(47,74,91,0.08);
   padding: 6px 14px;
   border-radius: 50px;
 }
@@ -636,7 +640,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   border-bottom: 1px solid var(--color-gray-2);
 }
 .pricing__table th {
-  background: var(--color-text);
+  background: var(--color-primary-dark);
   color: var(--color-white);
   font-weight: 700;
   font-size: 14px;
@@ -662,8 +666,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0,102,255,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,102,255,0.08) 1px, transparent 1px);
+    linear-gradient(rgba(47,74,91,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47,74,91,0.08) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 .cta-section__inner { position: relative; z-index: 1; }
@@ -730,8 +734,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0,102,255,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,102,255,0.06) 1px, transparent 1px);
+    linear-gradient(rgba(47,74,91,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47,74,91,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 .page-hero__inner { position: relative; z-index: 1; }
@@ -791,7 +795,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: absolute;
   top: 16px; left: 16px;
   padding: 4px 12px;
-  background: rgba(0,102,255,0.9);
+  background: rgba(47,74,91,0.9);
   color: white;
   font-size: 12px;
   font-weight: 700;
@@ -809,7 +813,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .case-card__img--bridal2 { background: linear-gradient(135deg, #fce7f3 0%, #f9a8d4 100%); }
 .case-card__img--gift { background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%); }
 .case-card__img--product { background: linear-gradient(135deg, #d1fae5 0%, #6ee7b7 100%); }
-.case-card__img--card { background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%); }
+.case-card__img--card { background: linear-gradient(135deg, #DCE5EA 0%, #93c5fd 100%); }
 .case-card__img--event { background: linear-gradient(135deg, #fee2e2 0%, #fca5a5 100%); }
 .case-card__body { padding: 28px; }
 .case-card__title { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
@@ -888,7 +892,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 4px rgba(0,102,255,0.1);
+  box-shadow: 0 0 0 4px rgba(47,74,91,0.1);
 }
 .form-textarea { resize: vertical; min-height: 160px; }
 .form-checkboxes { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -937,8 +941,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .contact__info-icon { font-size: 24px; flex-shrink: 0; }
 .contact__flow-card {
-  background: linear-gradient(135deg, #EFF6FF 0%, #E0F2FE 100%);
-  border: 2px solid rgba(0,102,255,0.15);
+  background: linear-gradient(135deg, #EEF2F4 0%, #DCE5EA 100%);
+  border: 2px solid rgba(47,74,91,0.15);
   border-radius: var(--radius-lg);
   padding: 32px;
 }

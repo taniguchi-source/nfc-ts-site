@@ -1,4 +1,4 @@
-/* =========================================
+﻿/* =========================================
    機能詳細ページ専用スタイル
    ========================================= */
 
@@ -32,7 +32,7 @@
 .feature-nav__list a:hover {
   color: var(--color-primary);
   border-bottom-color: var(--color-primary);
-  background: rgba(0,102,255,0.03);
+  background: rgba(47,74,91,0.03);
 }
 
 /* ---- 機能セクション（2カラム） ---- */
@@ -75,7 +75,7 @@
   transition: var(--transition);
 }
 .feat-list__item:hover {
-  background: rgba(0,102,255,0.06);
+  background: rgba(47,74,91,0.06);
   transform: translateX(4px);
 }
 .feat-list__icon {
@@ -118,20 +118,20 @@
   text-align: center;
 }
 .feat-visual--cloud {
-  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
-  border: 2px solid rgba(0,102,255,0.15);
+  background: linear-gradient(135deg, #EEF2F4 0%, #DCE5EA 100%);
+  border: 2px solid rgba(47,74,91,0.15);
 }
 .feat-visual--security {
-  background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
-  border: 2px solid rgba(34,197,94,0.2);
+  background: linear-gradient(135deg, #EEF2F4 0%, #DCE5EA 100%);
+  border: 2px solid rgba(47,74,91,0.15);
 }
 .feat-visual--data {
-  background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
-  border: 2px solid rgba(249,115,22,0.2);
+  background: linear-gradient(135deg, #FFF3EC 0%, #FCE3D6 100%);
+  border: 2px solid rgba(227,83,41,0.2);
 }
 .feat-visual--design {
-  background: linear-gradient(135deg, #FAF5FF 0%, #EDE9FE 100%);
-  border: 2px solid rgba(139,92,246,0.2);
+  background: linear-gradient(135deg, #EEF2F4 0%, #DCE5EA 100%);
+  border: 2px solid rgba(47,74,91,0.15);
 }
 .feat-visual__icon {
   font-size: 80px;
@@ -158,7 +158,7 @@
   font-size: 18px;
   letter-spacing: 0.1em;
   margin-top: 16px;
-  box-shadow: 0 4px 20px rgba(0,102,255,0.3);
+  box-shadow: 0 4px 20px rgba(47,74,91,0.3);
 }
 .feat-visual__sub {
   margin-top: 12px;
@@ -177,7 +177,7 @@
 }
 .chart-bar {
   flex: 1;
-  background: linear-gradient(to top, #0066FF, #00C4FF);
+  background: linear-gradient(to top, #2F4A5B, #4D7286);
   border-radius: 6px 6px 0 0;
   display: flex;
   flex-direction: column;
@@ -214,10 +214,10 @@
   color: var(--color-white);
   letter-spacing: 0.05em;
 }
-.feat-shape--card { background: linear-gradient(135deg, #0066FF, #0052cc); border-radius: 12px; }
-.feat-shape--seal { background: linear-gradient(135deg, #8B5CF6, #7C3AED); border-radius: 50px; }
-.feat-shape--tag { background: linear-gradient(135deg, #059669, #047857); border-radius: 4px 4px 4px 20px; }
-.feat-shape--custom { background: linear-gradient(135deg, #D97706, #B45309); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); min-height: 80px; display:flex; align-items:center; justify-content:center; }
+.feat-shape--card { background: linear-gradient(135deg, #2F4A5B, #233A48); border-radius: 12px; }
+.feat-shape--seal { background: linear-gradient(135deg, #E35329, #C8431F); border-radius: 50px; }
+.feat-shape--tag { background: linear-gradient(135deg, #4D7286, #2F4A5B); border-radius: 4px 4px 4px 20px; }
+.feat-shape--custom { background: linear-gradient(135deg, #ED8A63, #E35329); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); min-height: 80px; display:flex; align-items:center; justify-content:center; }
 
 /* ---- 技術仕様グリッド ---- */
 .spec-grid {

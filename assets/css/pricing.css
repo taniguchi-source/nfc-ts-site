@@ -1,4 +1,4 @@
-/* =========================================
+﻿/* =========================================
    料金プランページ専用スタイル
    ========================================= */
 
@@ -25,7 +25,7 @@
 }
 .plan-card--featured {
   border-color: var(--color-primary);
-  box-shadow: 0 8px 40px rgba(0,102,255,0.15);
+  box-shadow: 0 8px 40px rgba(47,74,91,0.15);
   transform: scale(1.03);
 }
 .plan-card--featured:hover {
@@ -110,7 +110,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #10B981;
+  color: var(--color-primary);
   font-weight: 700;
 }
 .plan-card__features li.ng {
@@ -146,7 +146,7 @@
 }
 .system-fee-card--featured {
   border-color: var(--color-primary);
-  background: linear-gradient(160deg, #EFF6FF 0%, #DBEAFE 100%);
+  background: linear-gradient(160deg, #EEF2F4 0%, #DCE5EA 100%);
 }
 .system-fee-badge {
   position: absolute;
