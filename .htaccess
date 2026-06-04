@@ -12,5 +12,10 @@
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
 
+# --- HSTS: ブラウザに常にHTTPSで接続させる（https応答時のみ有効） ---
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=15552000"
+</IfModule>
+
 # --- 文字コード ---
 AddDefaultCharset UTF-8
