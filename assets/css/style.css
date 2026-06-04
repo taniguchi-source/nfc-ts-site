@@ -232,7 +232,13 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   border-radius: 20px;
   padding: 36px 48px;
   box-shadow: 0 10px 36px rgba(120,80,50,0.12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: center;
 }
+.hero__col--title { text-align: right; }
+.hero__col--title .hero__title { margin-bottom: 0; }
 .hero__anniv {
   display: block;
   width: clamp(140px, 18vw, 184px);
@@ -1014,6 +1020,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .flow__arrow { transform: rotate(90deg); padding-top: 0; align-self: center; }
   .implement__grid { grid-template-columns: repeat(2, 1fr); }
   .guide__grid { grid-template-columns: repeat(2, 1fr); }
+  .hero__inner { grid-template-columns: 1fr; gap: 22px; }
+  .hero__col--title { text-align: left; order: -1; }
 }
 
 @media (max-width: 600px) {
