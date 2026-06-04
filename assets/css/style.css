@@ -49,7 +49,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 
 /* --- ユーティリティ --- */
 .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-.section { padding: 96px 0; }
+.section { padding: 60px 0; }
 .section--dark { background: var(--color-dark-2); color: var(--color-white); }
 .section--gray { background: var(--color-gray); }
 .section__label {
@@ -68,7 +68,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-size: clamp(24px, 3.5vw, 36px);
   font-weight: 800;
   line-height: 1.4;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   border-left: var(--border-accent);
   padding-left: 18px;
   color: var(--color-text);
@@ -81,7 +81,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-size: 16px;
   color: var(--color-text-light);
   max-width: 600px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   padding-left: 23px;
   line-height: 1.8;
 }
@@ -462,7 +462,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   background: var(--color-gray);
   border-left: var(--border-accent);
   border-radius: var(--radius-md);
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 .implement__premise-icon { font-size: 40px; line-height: 1; flex-shrink: 0; }
 .implement__premise strong {
@@ -602,7 +602,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    ========================================= */
 .cta-section {
   position: relative;
-  padding: 100px 0;
+  padding: 64px 0;
   text-align: center;
   overflow: hidden;
   background: var(--color-dark);
@@ -670,7 +670,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    ========================================= */
 .page-hero {
   position: relative;
-  padding: 160px 0 80px;
+  padding: 116px 0 48px;
   background: var(--color-dark);
   overflow: hidden;
 }
@@ -977,7 +977,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 @media (max-width: 600px) {
-  .section { padding: 64px 0; }
+  .section { padding: 44px 0; }
   .hero__actions { flex-direction: column; }
   .hero__stats { gap: 16px; }
   .stat__divider { display: none; }
