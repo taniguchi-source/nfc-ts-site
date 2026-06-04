@@ -255,6 +255,12 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   z-index: 1;
   padding: 112px 24px 64px;
 }
+.hero__anniv {
+  display: block;
+  width: clamp(140px, 18vw, 184px);
+  height: auto;
+  margin-bottom: 22px;
+}
 .hero__badge {
   display: inline-block;
   padding: 6px 16px;
@@ -700,6 +706,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .footer__tagline { font-size: 14px; margin-bottom: 8px; }
 .footer__company { font-size: 13px; color: rgba(255,255,255,0.5); }
+.footer__anniv { display: block; width: 124px; height: auto; margin-top: 18px; opacity: 0.92; }
 .footer__nav ul { display: flex; flex-wrap: wrap; gap: 16px 32px; }
 .footer__nav a { font-size: 14px; color: rgba(255,255,255,0.6); }
 .footer__nav a:hover { color: var(--color-white); }
