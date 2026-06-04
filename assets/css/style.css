@@ -452,6 +452,85 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 /* =========================================
+   NFC-TSの組み込み方（注文方法）
+   ========================================= */
+.implement__premise {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 32px;
+  background: var(--color-gray);
+  border-left: var(--border-accent);
+  border-radius: var(--radius-md);
+  margin-bottom: 40px;
+}
+.implement__premise-icon { font-size: 40px; line-height: 1; flex-shrink: 0; }
+.implement__premise strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+.implement__premise p { font-size: 14px; color: var(--color-text-light); line-height: 1.8; }
+.implement__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.implement-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-2);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+.implement-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+.implement-card__num {
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+.implement-card__icon { font-size: 40px; margin-bottom: 14px; }
+.implement-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.implement-card__text {
+  font-size: 13.5px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+.implement-card__tag {
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: rgba(0,102,255,0.08);
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+.implement__note {
+  margin-top: 28px;
+  font-size: 13px;
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+/* =========================================
    導入の流れ
    ========================================= */
 .flow__steps {
@@ -894,6 +973,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .form-row { grid-template-columns: 1fr; }
   .flow__steps { flex-direction: column; }
   .flow__arrow { transform: rotate(90deg); padding-top: 0; align-self: center; }
+  .implement__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -903,4 +983,6 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .stat__divider { display: none; }
   .cases__grid { grid-template-columns: 1fr; }
   .usecases__grid { grid-template-columns: 1fr; }
+  .implement__grid { grid-template-columns: 1fr; }
+  .implement__premise { flex-direction: column; gap: 12px; }
 }
