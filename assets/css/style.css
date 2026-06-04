@@ -400,6 +400,51 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .feature-card__icon { font-size: 40px; margin-bottom: 16px; }
 .feature-card__title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
 .feature-card__text { font-size: 14px; color: var(--color-text-light); line-height: 1.8; }
+.features__more { text-align: center; margin-top: 36px; }
+
+/* =========================================
+   ご案内（各ページ誘導）
+   ========================================= */
+.guide__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-2);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+.guide-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-6px);
+}
+.guide-card__icon { font-size: 36px; margin-bottom: 14px; }
+.guide-card__title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+.guide-card__text {
+  font-size: 13.5px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+.guide-card__link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
 
 /* =========================================
    活用シーン
@@ -974,6 +1019,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .flow__steps { flex-direction: column; }
   .flow__arrow { transform: rotate(90deg); padding-top: 0; align-self: center; }
   .implement__grid { grid-template-columns: repeat(2, 1fr); }
+  .guide__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -985,4 +1031,5 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .usecases__grid { grid-template-columns: 1fr; }
   .implement__grid { grid-template-columns: 1fr; }
   .implement__premise { flex-direction: column; gap: 12px; }
+  .guide__grid { grid-template-columns: 1fr; }
 }
