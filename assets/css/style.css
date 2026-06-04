@@ -210,7 +210,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    ========================================= */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   background: var(--color-dark);
@@ -253,7 +253,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .hero__inner {
   position: relative;
   z-index: 1;
-  padding: 140px 24px 80px;
+  padding: 112px 24px 64px;
 }
 .hero__badge {
   display: inline-block;
@@ -264,26 +264,26 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-size: 13px;
   color: var(--color-accent);
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .hero__title {
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(32px, 4.6vw, 54px);
   font-weight: 900;
   color: var(--color-white);
-  line-height: 1.2;
-  margin-bottom: 24px;
+  line-height: 1.25;
+  margin-bottom: 20px;
 }
 .hero__sub {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 1.7vw, 18px);
   color: rgba(255,255,255,0.75);
-  margin-bottom: 40px;
-  line-height: 1.8;
+  margin-bottom: 32px;
+  line-height: 1.75;
 }
 .hero__actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 .hero__stats {
   display: flex;
@@ -301,18 +301,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .stat__label { font-size: 13px; color: rgba(255,255,255,0.6); }
 .stat__divider { width: 1px; height: 40px; background: rgba(255,255,255,0.2); }
 .hero__scroll {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255,255,255,0.4);
-  font-size: 11px;
-  font-family: var(--font-en);
-  letter-spacing: 0.2em;
+  display: none;
 }
 .hero__scroll-line {
   width: 1px;

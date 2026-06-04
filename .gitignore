@@ -11,3 +11,4 @@ Thumbs.db
 # Node (将来的な拡張用)
 node_modules/
 npm-debug.log*
+.claude/
