@@ -726,6 +726,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   margin-bottom: 12px;
   display: inline-block;
 }
+.footer__logo .logo-nfc { color: var(--color-white); }
+.footer__logo .logo-ts { color: var(--color-accent); }
 .footer__tagline { font-size: 14px; margin-bottom: 8px; }
 .footer__company { font-size: 13px; color: rgba(255,255,255,0.5); }
 .footer__anniv { display: block; width: 124px; height: auto; margin-top: 18px; opacity: 0.92; }
