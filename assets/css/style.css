@@ -213,7 +213,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
    ========================================= */
 .hero {
   position: relative;
-  background: #EC8A5F;
+  background: #EFCDB6;
   padding: 80px 20px 26px;
   overflow: hidden;
 }
@@ -229,7 +229,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   border: 1px solid rgba(255,255,255,0.6);
   border-radius: 20px;
   padding: 52px 48px;
-  box-shadow: 0 14px 44px rgba(120,60,30,0.18);
+  box-shadow: 0 10px 36px rgba(120,80,50,0.12);
 }
 .hero__anniv {
   display: block;
