@@ -183,6 +183,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   position: relative;
 }
 .nav__list a:not(.btn):hover { color: var(--color-primary); }
+.nav__list a.btn--primary,
+.nav__list a.btn--primary:hover { color: var(--color-white); }
 .nav__list a.active:not(.btn)::after {
   content: '';
   position: absolute;
