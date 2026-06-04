@@ -1,0 +1,16 @@
+# ===============================================
+# NFC-TS  .htaccess
+# HTTP → HTTPS 自動リダイレクト（エックスサーバー推奨形式）
+# ※ SSL（独自SSL）を有効化してから反映してください
+# ===============================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # http でのアクセスを https に転送（301: 恒久的リダイレクト）
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# --- 文字コード ---
+AddDefaultCharset UTF-8
