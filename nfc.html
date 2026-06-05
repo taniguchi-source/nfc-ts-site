@@ -110,27 +110,27 @@
     <div class="container">
       <div class="section__label">HOW IT WORKS</div>
       <h2 class="section__title">電磁誘導で、電池なしに動く。</h2>
-      <p class="section__desc">パッシブ型NFCタグはバッテリーを持ちません。読み取りは次の3段階で行われます。</p>
+      <p class="section__desc" style="max-width:820px;">パッシブ型NFCタグは電源を内蔵しません。リーダーが発する磁界から電力を受け取り、<strong>電磁誘導</strong>と<strong>変調</strong>という2つの物理現象を使って、次の3段階で通信します。</p>
       <div class="flow__steps">
         <div class="flow__step">
           <div class="flow__step-num">STEP 01</div>
           <div class="flow__step-icon">📡</div>
-          <h3 class="flow__step-title">磁界の発生</h3>
-          <p class="flow__step-text">リーダー（NFC対応スマートフォン等）が、13.56MHzの高周波交流磁界を発生させます。</p>
+          <h3 class="flow__step-title">磁界（搬送波）の発生</h3>
+          <p class="flow__step-text">リーダー（NFC対応スマホ等）がアンテナコイルに高周波電流を流し、13.56MHzの交流磁界を空間に生み出します。この磁界が、タグへ「電力」を送り「信号」を運ぶ土台になります。</p>
         </div>
         <div class="flow__arrow">→</div>
         <div class="flow__step">
           <div class="flow__step-num">STEP 02</div>
           <div class="flow__step-icon">⚙️</div>
-          <h3 class="flow__step-title">電磁誘導で起動</h3>
-          <p class="flow__step-text">タグ内のアンテナコイルが磁界から電力を取り出し、ICチップが起動します（パッシブ給電）。</p>
+          <h3 class="flow__step-title">電磁誘導でタグが起動</h3>
+          <p class="flow__step-text">タグ側のコイルがこの磁界を受けると、電磁誘導（ファラデーの法則）により電流が生まれます。タグは13.56MHzに<strong>共振</strong>するよう設計され、効率よく電力を取り出してICチップを起動します。電池は不要です（パッシブ給電）。</p>
         </div>
         <div class="flow__arrow">→</div>
         <div class="flow__step">
           <div class="flow__step-num">STEP 03</div>
           <div class="flow__step-icon">📲</div>
-          <h3 class="flow__step-title">負荷変調で応答</h3>
-          <p class="flow__step-text">タグは負荷変調（load modulation）によりデータを返し、NDEF形式のURL等がリーダー側で読み出されます。</p>
+          <h3 class="flow__step-title">負荷変調でデータを返信</h3>
+          <p class="flow__step-text">起動したICは、自分のアンテナにかかる負荷（インピーダンス）を高速で切り替え、リーダーの磁界にごく小さな揺らぎを生みます。リーダーはこの揺らぎを信号として読み取り、NDEF形式のURL等を受信します（<strong>負荷変調</strong>）。</p>
         </div>
       </div>
     </div>
