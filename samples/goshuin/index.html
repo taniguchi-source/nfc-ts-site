@@ -10,36 +10,20 @@
 </head>
 <body>
 
-  <!-- Vimeo動画を全画面（cover）で自動再生（ミュート・ループ）
+  <!-- Vimeo動画（再生/一時停止・シークバーなどの操作バー付き・全画面）
        元リンク: https://vimeo.com/1199252175/af8726be0e -->
-  <div class="fs-cover">
-    <iframe id="v"
-            src="https://player.vimeo.com/video/1199252175?h=af8726be0e&background=1&autoplay=1&loop=1&muted=1&playsinline=1"
-            allow="autoplay; fullscreen; picture-in-picture"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="御朱印帳 サンプル動画"></iframe>
-  </div>
+  <iframe class="fs-iframe" id="v"
+          src="https://player.vimeo.com/video/1199252175?h=af8726be0e&autoplay=1&muted=1&loop=1&playsinline=1&title=0&byline=0&portrait=0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="御朱印帳 サンプル動画"></iframe>
 
   <div class="overlay">
     <div class="overlay__top">
       <span class="overlay__title">御朱印帳 — サンプル動画</span>
       <a class="btn-back" href="../index.html">← 一覧</a>
     </div>
-    <button class="btn-sound" id="sound" type="button">🔇 音声をオンにする</button>
   </div>
 
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script>
-    var b = document.getElementById('sound');
-    var player = new Vimeo.Player(document.getElementById('v'));
-    var muted = true;
-    b.addEventListener('click', function () {
-      muted = !muted;
-      player.setMuted(muted).then(function () {
-        if (!muted) { player.setVolume(1); player.play(); }
-      });
-      b.textContent = muted ? '🔇 音声をオンにする' : '🔊 音声をオフにする';
-    });
-  </script>
 </body>
 </html>
