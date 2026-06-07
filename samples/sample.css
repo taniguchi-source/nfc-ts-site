@@ -22,13 +22,26 @@ html, body {
   background: linear-gradient(135deg, #1C2E37 0%, #2F4A5B 60%, #E35329 160%);
 }
 
-/* --- ② YouTube/Vimeo等のiframe版（16:9のため上下に黒帯が出ます） --- */
+/* --- ② YouTube/Vimeo等のiframe版（そのまま100vw/100vh：16:9のため上下に黒帯） --- */
 .fs-iframe {
   position: fixed;
   inset: 0;
   width: 100vw;
   height: 100vh;
   height: 100dvh;
+  border: 0;
+}
+
+/* --- ③ iframe（Vimeo/YouTube）を余白なく全画面に（cover相当） --- */
+.fs-cover { position: fixed; inset: 0; overflow: hidden; background: #000; }
+.fs-cover iframe {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 56.25vw;            /* 16:9（幅100vwのときの高さ） */
+  min-width: 177.78vh;        /* 16:9（高さ100vhのときの幅） */
+  min-height: 100vh;
+  min-height: 100dvh;
   border: 0;
 }
 

@@ -10,37 +10,36 @@
 </head>
 <body>
 
-  <!-- ① 自社の動画ファイルを使う場合（推奨・余白なく全画面）
-       この御朱印帳フォルダ内に「video.mp4」を置くと再生されます。
-       ポスター画像があれば「poster.jpg」も置いてください。 -->
-  <video id="v" class="fs-video" src="video.mp4" poster="poster.jpg"
-         autoplay muted loop playsinline></video>
-
-  <!-- ② YouTube/Vimeo を使う場合は、上の<video>を削除し、下のコメントを有効化してください
-       （XXXXXXXX を動画IDに置き換え。16:9のため上下に黒帯が出ます）
-  <iframe class="fs-iframe"
-          src="https://www.youtube.com/embed/XXXXXXXX?autoplay=1&mute=1&loop=1&playlist=XXXXXXXX&controls=0&playsinline=1"
-          allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
-  -->
+  <!-- Vimeo動画を全画面（cover）で自動再生（ミュート・ループ）
+       元リンク: https://vimeo.com/1199252175/af8726be0e -->
+  <div class="fs-cover">
+    <iframe id="v"
+            src="https://player.vimeo.com/video/1199252175?h=af8726be0e&background=1&autoplay=1&loop=1&muted=1&playsinline=1"
+            allow="autoplay; fullscreen; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="御朱印帳 サンプル動画"></iframe>
+  </div>
 
   <div class="overlay">
     <div class="overlay__top">
-      <span class="overlay__title">御朱印帳 — 職人の手しごと</span>
+      <span class="overlay__title">御朱印帳 — サンプル動画</span>
       <a class="btn-back" href="../index.html">← 一覧</a>
     </div>
     <button class="btn-sound" id="sound" type="button">🔇 音声をオンにする</button>
   </div>
 
+  <script src="https://player.vimeo.com/api/player.js"></script>
   <script>
-    var v = document.getElementById('v');
     var b = document.getElementById('sound');
-    if (b && v) {
-      b.addEventListener('click', function () {
-        v.muted = !v.muted;
-        b.textContent = v.muted ? '🔇 音声をオンにする' : '🔊 音声をオフにする';
-        v.play();
+    var player = new Vimeo.Player(document.getElementById('v'));
+    var muted = true;
+    b.addEventListener('click', function () {
+      muted = !muted;
+      player.setMuted(muted).then(function () {
+        if (!muted) { player.setVolume(1); player.play(); }
       });
-    }
+      b.textContent = muted ? '🔇 音声をオンにする' : '🔊 音声をオフにする';
+    });
   </script>
 </body>
 </html>
