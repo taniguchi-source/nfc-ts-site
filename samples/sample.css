@@ -1,0 +1,89 @@
+/* =========================================
+   サンプル動画（全画面表示）共通スタイル
+   ========================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;            /* 100vw/100vhのはみ出しスクロールを防止 */
+  background: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* --- ① 自社配置の動画（推奨：余白なく全画面） --- */
+.fs-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;              /* モバイルのアドレスバー変動に対応 */
+  object-fit: cover;          /* 画面いっぱいに、はみ出し部分は切り取り */
+  /* 動画未配置でも映えるブランド調のフォールバック背景 */
+  background: linear-gradient(135deg, #1C2E37 0%, #2F4A5B 60%, #E35329 160%);
+}
+
+/* --- ② YouTube/Vimeo等のiframe版（16:9のため上下に黒帯が出ます） --- */
+.fs-iframe {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  border: 0;
+}
+
+/* --- オーバーレイ（タイトル・戻る・音声切替） --- */
+.overlay { position: fixed; inset: 0; z-index: 2; pointer-events: none; }
+.overlay__top {
+  position: absolute; top: 0; left: 0; right: 0;
+  padding: 20px 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+}
+.overlay__title {
+  color: #fff; font-size: 16px; font-weight: 700;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+.overlay a, .overlay button { pointer-events: auto; }
+.btn-back {
+  color: #fff; font-size: 14px; text-decoration: none;
+  background: rgba(0,0,0,0.4); padding: 8px 16px; border-radius: 50px;
+  backdrop-filter: blur(6px); white-space: nowrap;
+}
+.btn-back:hover { background: rgba(0,0,0,0.6); }
+.btn-sound {
+  position: absolute; bottom: 24px; right: 24px;
+  color: #fff; background: rgba(0,0,0,0.45); border: 0;
+  padding: 12px 18px; border-radius: 50px; font-size: 14px; cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+/* =========================================
+   メニュー（ツリーのルート）
+   ========================================= */
+.menu {
+  width: 100%; height: 100%; overflow: auto;
+  background: #1C2E37; color: #fff;
+  padding: 56px 24px;
+}
+.menu__inner { max-width: 720px; margin: 0 auto; }
+.menu__logo { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 28px; }
+.menu__logo .ts { color: #E35329; }
+.menu h1 { font-size: 24px; margin-bottom: 8px; }
+.menu .lead { color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.8; margin-bottom: 32px; }
+.menu__list { display: grid; gap: 14px; }
+.menu__item {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 22px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  color: #fff; text-decoration: none;
+  transition: all 0.2s ease;
+}
+.menu__item:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); border-color: rgba(227,83,41,0.5); }
+.menu__item .ico { font-size: 30px; line-height: 1; }
+.menu__item h3 { font-size: 16px; font-weight: 700; }
+.menu__item small { color: rgba(255,255,255,0.6); font-size: 12px; }
+.menu__back { display: inline-block; margin-top: 32px; color: rgba(255,255,255,0.6); font-size: 13px; text-decoration: none; }
+.menu__back:hover { color: #fff; }
