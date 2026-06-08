@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NFCタグとは？ | NFC-TS</title>
-  <meta name="description" content="NFCタグとは？13.56MHz帯の近距離無線通信（ISO/IEC 18092）を用いた電池不要のパッシブ型ICタグについて、通信仕様・動作原理・NFC Forumタグタイプ・採用IC・耐久性を技術的に解説します。">
+  <meta name="description" content="NFCタグとは？13.56MHz帯の近距離無線通信（ISO/IEC 18092）を用いた電池不要のパッシブ型ICタグについて、通信仕様・動作原理・QRとの違い・採用IC・耐久性・タグタイプを技術的に解説します。">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -52,6 +52,7 @@
         <div class="acc__head-text">
           <div class="section__label">DEFINITION</div>
           <h2 class="section__title">NFC＝近距離無線通信</h2>
+          <p class="acc__lead">NFCの基本と、準拠する国際規格をやさしく解説。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
@@ -69,6 +70,7 @@
         <div class="acc__head-text">
           <div class="section__label">SPECIFICATIONS</div>
           <h2 class="section__title">主な技術仕様</h2>
+          <p class="acc__lead">周波数・速度・通信距離など、NFCの基本パラメータ。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
@@ -101,6 +103,7 @@
         <div class="acc__head-text">
           <div class="section__label">HOW IT WORKS</div>
           <h2 class="section__title">電磁誘導で、電池なしに動く。</h2>
+          <p class="acc__lead">電池なしで動く仕組みを、3つのステップで図解。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
@@ -132,35 +135,34 @@
     </div>
   </section>
 
-  <!-- NFC Forum タグタイプ -->
+  <!-- QRコードとの違い -->
   <section class="section section--gray acc">
     <div class="container">
       <div class="acc__head" role="button" tabindex="0" aria-expanded="false">
         <div class="acc__head-text">
-          <div class="section__label">TAG TYPES</div>
-          <h2 class="section__title">NFC Forum タグタイプ（Type 1〜5）</h2>
+          <div class="section__label">NFC vs QR</div>
+          <h2 class="section__title">QRコードとの違い</h2>
+          <p class="acc__lead">読み取り原理・操作性・耐久性などを比較。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
       <div class="acc__body">
-        <p class="section__desc">NFC Forumは、基盤となる通信技術ごとに5つのタグタイプを規定しています。用途やコスト・容量に応じて選定します。</p>
+        <p class="section__desc">QRコードは「光学的（カメラ）」読み取り、NFCは「電磁的（無線）」読み取りという根本的な違いがあります。両者は併用も可能です。</p>
         <div class="pricing__table-wrap">
-          <table class="pricing__table pricing__table--nowrap2">
+          <table class="pricing__table">
             <thead>
-              <tr><th>タイプ</th><th>基盤技術 / 準拠規格</th><th>主な特徴</th></tr>
+              <tr><th>項目</th><th>NFCタグ</th><th>QRコード</th></tr>
             </thead>
             <tbody>
-              <tr><td>Type 1</td><td>NFC-A（ISO/IEC 14443 Type A）</td><td>低コストだが<strong>衝突防止に非対応</strong>。旧来規格で採用例は少ない（代表IC：Topaz）</td></tr>
-              <tr><td>Type 2</td><td>NFC-A（ISO/IEC 14443 Type A）</td><td><strong>衝突防止に対応</strong>し最も普及。当社標準の<strong>NTAG213もこのType 2</strong>（代表IC：NXP NTAG／MIFARE Ultralight）</td></tr>
-              <tr><td>Type 3</td><td>NFC-F（FeliCa／JIS X 6319-4）</td><td>高速通信・大容量（最大1MB）。国内交通系（FeliCa）で実績</td></tr>
-              <tr><td>Type 4</td><td>ISO-DEP（ISO/IEC 14443 Type A/B）</td><td>大容量（32KB〜1MB）・高セキュリティ向け</td></tr>
-              <tr><td>Type 5</td><td>NFC-V（ISO/IEC 15693）</td><td>やや長距離・在庫/物流管理向け</td></tr>
+              <tr><td>読み取り原理</td><td>電磁誘導による無線通信</td><td>カメラによる光学読み取り</td></tr>
+              <tr><td>操作</td><td>かざすだけ（標準機能）</td><td>カメラ起動・撮影が必要</td></tr>
+              <tr><td>見た目</td><td>内蔵でき意匠を損なわない</td><td>印刷スペースが露出</td></tr>
+              <tr><td>内容の変更</td><td>クラウドで何度でも</td><td>原則、印刷し直し</td></tr>
+              <tr><td>偽造・複製対策</td><td>固有UID・暗号認証で真贋判定</td><td>複製が容易</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="pricing__note">
-          ※ <strong>Type 1とType 2の違い</strong>：どちらも同じNFC-A（ISO/IEC 14443 Type A）がベースですが、<strong>Type 2は複数タグを同時に読み取れる「衝突防止（アンチコリジョン）」に対応</strong>し、安価で機能も豊富なため現在の主流です。Type 1は旧来規格で採用例は限定的。当社が標準採用するNTAG213もType 2です。
-        </p>
+        <p class="pricing__note">※ NFCタグの各ICには製造段階で書き換え不可の固有ID（UID）が付与され、これを利用した真贋判定が可能です。</p>
       </div>
     </div>
   </section>
@@ -172,6 +174,7 @@
         <div class="acc__head-text">
           <div class="section__label">IC &amp; MEMORY</div>
           <h2 class="section__title">採用IC（チップ）とメモリ容量</h2>
+          <p class="acc__lead">標準採用するNXP NTAG213と、メモリ容量。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
@@ -205,6 +208,7 @@
         <div class="acc__head-text">
           <div class="section__label">DURABILITY</div>
           <h2 class="section__title">耐久性・環境性能</h2>
+          <p class="acc__lead">耐熱・経年劣化・対衝撃などの環境性能。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
@@ -231,33 +235,36 @@
     </div>
   </section>
 
-  <!-- QRコードとの違い -->
+  <!-- NFC Forum タグタイプ -->
   <section class="section acc">
     <div class="container">
       <div class="acc__head" role="button" tabindex="0" aria-expanded="false">
         <div class="acc__head-text">
-          <div class="section__label">NFC vs QR</div>
-          <h2 class="section__title">QRコードとの違い</h2>
+          <div class="section__label">TAG TYPES</div>
+          <h2 class="section__title">NFC Forum タグタイプ（Type 1〜5）</h2>
+          <p class="acc__lead">NFC Forumが定める Type 1〜5 の違い。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
       <div class="acc__body">
-        <p class="section__desc">QRコードは「光学的（カメラ）」読み取り、NFCは「電磁的（無線）」読み取りという根本的な違いがあります。両者は併用も可能です。</p>
+        <p class="section__desc">NFC Forumは、基盤となる通信技術ごとに5つのタグタイプを規定しています。用途やコスト・容量に応じて選定します。</p>
         <div class="pricing__table-wrap">
-          <table class="pricing__table">
+          <table class="pricing__table pricing__table--nowrap2">
             <thead>
-              <tr><th>項目</th><th>NFCタグ</th><th>QRコード</th></tr>
+              <tr><th>タイプ</th><th>基盤技術 / 準拠規格</th><th>主な特徴</th></tr>
             </thead>
             <tbody>
-              <tr><td>読み取り原理</td><td>電磁誘導による無線通信</td><td>カメラによる光学読み取り</td></tr>
-              <tr><td>操作</td><td>かざすだけ（標準機能）</td><td>カメラ起動・撮影が必要</td></tr>
-              <tr><td>見た目</td><td>内蔵でき意匠を損なわない</td><td>印刷スペースが露出</td></tr>
-              <tr><td>内容の変更</td><td>クラウドで何度でも</td><td>原則、印刷し直し</td></tr>
-              <tr><td>偽造・複製対策</td><td>固有UID・暗号認証で真贋判定</td><td>複製が容易</td></tr>
+              <tr><td>Type 1</td><td>NFC-A（ISO/IEC 14443 Type A）</td><td>低コストだが<strong>衝突防止に非対応</strong>。旧来規格で採用例は少ない（代表IC：Topaz）</td></tr>
+              <tr><td>Type 2</td><td>NFC-A（ISO/IEC 14443 Type A）</td><td><strong>衝突防止に対応</strong>し最も普及。当社標準の<strong>NTAG213もこのType 2</strong>（代表IC：NXP NTAG／MIFARE Ultralight）</td></tr>
+              <tr><td>Type 3</td><td>NFC-F（FeliCa／JIS X 6319-4）</td><td>高速通信・大容量（最大1MB）。国内交通系（FeliCa）で実績</td></tr>
+              <tr><td>Type 4</td><td>ISO-DEP（ISO/IEC 14443 Type A/B）</td><td>大容量（32KB〜1MB）・高セキュリティ向け</td></tr>
+              <tr><td>Type 5</td><td>NFC-V（ISO/IEC 15693）</td><td>やや長距離・在庫/物流管理向け</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="pricing__note">※ NFCタグの各ICには製造段階で書き換え不可の固有ID（UID）が付与され、これを利用した真贋判定が可能です。</p>
+        <p class="pricing__note">
+          ※ <strong>Type 1とType 2の違い</strong>：どちらも同じNFC-A（ISO/IEC 14443 Type A）がベースですが、<strong>Type 2は複数タグを同時に読み取れる「衝突防止（アンチコリジョン）」に対応</strong>し、安価で機能も豊富なため現在の主流です。Type 1は旧来規格で採用例は限定的。当社が標準採用するNTAG213もType 2です。
+        </p>
       </div>
     </div>
   </section>
@@ -269,6 +276,7 @@
         <div class="acc__head-text">
           <div class="section__label">AND MORE</div>
           <h2 class="section__title">NFC-TSなら、その先まで。</h2>
+          <p class="acc__lead">クラウド連携で広がる、NFC-TSならではの体験。</p>
         </div>
         <span class="acc__btn"><span class="acc__btn-text">詳細を見る</span> <span class="acc__icon">＋</span></span>
       </div>
