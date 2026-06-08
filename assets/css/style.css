@@ -475,6 +475,53 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 
 /* =========================================
+   2つのシステム（Lite / Business）比較
+   ========================================= */
+.systems__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.system-card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 32px;
+  border: 2px solid var(--color-gray-2);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  transition: var(--transition);
+}
+.system-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.system-card--lite { border-top: 5px solid var(--color-accent); }
+.system-card--biz { border-top: 5px solid var(--color-primary); }
+.system-card__badge {
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+.system-card--lite .system-card__badge { background: rgba(227,83,41,0.1); color: var(--color-accent); }
+.system-card--biz .system-card__badge { background: rgba(47,74,91,0.1); color: var(--color-primary); }
+.system-card__name {
+  font-family: var(--font-en);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+.system-card__name span { color: var(--color-primary); }
+.system-card--lite .system-card__name span { color: var(--color-accent); }
+.system-card__desc { font-size: 14px; color: var(--color-text-light); line-height: 1.9; margin-bottom: 18px; }
+.system-card__list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+.system-card__list li { position: relative; padding-left: 24px; font-size: 14px; color: var(--color-text); }
+.system-card__list li::before { content: '✓'; position: absolute; left: 0; font-weight: 700; color: var(--color-primary); }
+.system-card--lite .system-card__list li::before { color: var(--color-accent); }
+.system-card .btn { margin-top: auto; }
+@media (max-width: 760px) { .systems__grid { grid-template-columns: 1fr; } }
+
+/* =========================================
    活用シーン
    ========================================= */
 .usecases__grid {
