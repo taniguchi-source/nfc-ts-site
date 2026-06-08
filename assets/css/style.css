@@ -663,6 +663,43 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-weight: 700;
   font-size: 14px;
 }
+/* =========================================
+   アコーディオン（NFC解説ページの各セクション）
+   ========================================= */
+.acc .acc__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+.acc .acc__head .section__title { margin-bottom: 0; }
+.acc__btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1.5px solid var(--color-primary);
+  padding: 9px 20px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+.acc__head:hover .acc__btn { background: var(--color-primary); color: #fff; }
+.acc__icon { font-size: 16px; line-height: 1; }
+.acc__body { display: none; padding-top: 28px; }
+.acc.is-open .acc__body { display: block; }
+.acc.is-open .acc__btn { color: var(--color-accent); border-color: var(--color-accent); }
+.acc.is-open .acc__head:hover .acc__btn { background: var(--color-accent); color: #fff; }
+@media (max-width: 600px) {
+  .acc .acc__head { flex-direction: column; align-items: flex-start; gap: 14px; }
+}
+
 .pricing__table--nowrap2 th:nth-child(1),
 .pricing__table--nowrap2 td:nth-child(1),
 .pricing__table--nowrap2 th:nth-child(2),
