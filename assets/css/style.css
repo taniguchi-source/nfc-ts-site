@@ -663,6 +663,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-weight: 700;
   font-size: 14px;
 }
+.pricing__table--nowrap2 th:nth-child(1),
+.pricing__table--nowrap2 td:nth-child(1),
+.pricing__table--nowrap2 th:nth-child(2),
+.pricing__table--nowrap2 td:nth-child(2) { white-space: nowrap; }
 .pricing__table th:first-child { text-align: left; border-radius: 8px 0 0 0; }
 .pricing__table th:last-child { border-radius: 0 8px 0 0; }
 .pricing__table td:first-child { text-align: left; font-weight: 600; }
