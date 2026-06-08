@@ -156,12 +156,12 @@
             <tr>
               <td>Type 1</td>
               <td>NFC-A（ISO/IEC 14443 Type A）</td>
-              <td>構造がシンプルで低コスト</td>
+              <td>低コストだが<strong>衝突防止に非対応</strong>。旧来規格で採用例は少ない（代表IC：Topaz）</td>
             </tr>
             <tr>
               <td>Type 2</td>
               <td>NFC-A（ISO/IEC 14443 Type A）</td>
-              <td>最も普及（NXP NTAGシリーズ等）</td>
+              <td><strong>衝突防止に対応</strong>し最も普及。当社標準の<strong>NTAG213もこのType 2</strong>（代表IC：NXP NTAG／MIFARE Ultralight）</td>
             </tr>
             <tr>
               <td>Type 3</td>
@@ -181,6 +181,9 @@
           </tbody>
         </table>
       </div>
+      <p class="pricing__note">
+        ※ <strong>Type 1とType 2の違い</strong>：どちらも同じNFC-A（ISO/IEC 14443 Type A）がベースですが、<strong>Type 2は複数タグを同時に読み取れる「衝突防止（アンチコリジョン）」に対応</strong>し、安価で機能も豊富なため現在の主流です。Type 1は旧来規格で採用例は限定的。当社が標準採用するNTAG213もType 2です。
+      </p>
     </div>
   </section>
 
