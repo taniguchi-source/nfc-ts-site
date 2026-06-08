@@ -174,7 +174,13 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 20px;
+}
+.nav__sep {
+  width: 1px;
+  height: 18px;
+  background: var(--color-gray-2);
+  margin: 0 2px;
 }
 .nav__list a {
   color: var(--color-text);
@@ -1139,6 +1145,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
     padding: 18px 24px;
     font-size: 18px;
   }
+  .nav__sep { display: none; }
   .hamburger { display: flex; }
   .header__brand-logo { height: 34px; }
   .header__product { font-size: 19px; }
