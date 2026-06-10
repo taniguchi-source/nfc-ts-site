@@ -519,6 +519,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .system-card__name span { color: var(--color-primary); }
 .system-card--lite .system-card__name span { color: var(--color-accent); }
+.system-card__who { font-size: 13px; color: var(--color-text); background: rgba(0,0,0,0.035); border-radius: 6px; padding: 9px 13px; margin-bottom: 14px; line-height: 1.7; }
+.system-card__who strong { color: var(--color-primary); margin-right: 4px; }
+.system-card--lite .system-card__who strong { color: var(--color-accent); }
 .system-card__desc { font-size: 14px; color: var(--color-text-light); line-height: 1.9; margin-bottom: 18px; }
 .system-card__list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
 .system-card__list li { position: relative; padding-left: 24px; font-size: 14px; color: var(--color-text); }
