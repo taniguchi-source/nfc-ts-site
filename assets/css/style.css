@@ -134,6 +134,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .btn--lg { padding: 18px 40px; font-size: 16px; }
 .btn--xl { padding: 20px 56px; font-size: 18px; }
 .btn--full { width: 100%; }
+.btn--outline { background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); }
+.btn--outline:hover { background: var(--color-primary); color: var(--color-white); }
+.btn--solid { background: var(--color-primary); color: var(--color-white); border: 2px solid var(--color-primary); }
+.btn--solid:hover { opacity: 0.9; }
 
 /* =========================================
    ヘッダー
@@ -401,7 +405,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   letter-spacing: 0.1em;
   margin-bottom: 16px;
 }
-.feature-card__icon { font-size: 40px; margin-bottom: 16px; }
+.feature-card__icon { font-size: 40px; margin-bottom: 16px; color: var(--color-primary); line-height: 1; }
+.feature-card__icon svg { width: 42px; height: 42px; vertical-align: middle; }
+.feature-card--accent .feature-card__icon { color: var(--color-accent); }
 .feature-card__title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
 .feature-card__text { font-size: 14px; color: var(--color-text-light); line-height: 1.8; }
 .features__more { text-align: center; margin-top: 36px; }
