@@ -561,6 +561,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .usecase-card__img--bridal { background: linear-gradient(135deg, #ede9ff 0%, #c4b5fd 100%); }
 .usecase-card__img--gift { background: linear-gradient(135deg, #fff0f6 0%, #fbb6ce 100%); }
 .usecase-card__img--b2b { background: linear-gradient(135deg, #DCE5EA 0%, #93c5fd 100%); }
+.usecase-card__img--personal { background: linear-gradient(135deg, #FBE9DD 0%, #F0A988 100%); }
 .usecase-card__body { padding: 32px; }
 .usecase-card__body h3 {
   font-size: 20px;
