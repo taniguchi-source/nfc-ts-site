@@ -413,21 +413,21 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .features__more { text-align: center; margin-top: 36px; }
 
 /* Lite：対応商品 & スマホ画面ウォークスルー（画面はダミー差し替え前提） */
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 960px; margin: 0 auto; }
 .product-card { background: #fff; border: 1px solid var(--color-gray-2); border-radius: 14px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.05); }
-.product-card__img { aspect-ratio: 1 / 1; background: #F1ECE3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--color-text-light); font-size: 13px; font-weight: 700; overflow: hidden; }
+.product-card__img { aspect-ratio: 4 / 5; background: #F1ECE3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--color-text-light); font-size: 13px; font-weight: 700; overflow: hidden; }
 .product-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .product-gallery-wrap { margin-top: 30px; }
 .product-gallery-label { font-size: 14px; font-weight: 700; color: var(--color-text); margin-bottom: 12px; }
-.product-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-.product-gallery img { width: 100%; border-radius: 8px; border: 1px solid var(--color-gray-2); display: block; }
+.product-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; max-width: 720px; margin: 0 auto; }
+.product-gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; border: 1px solid var(--color-gray-2); display: block; }
 .product-card__img small { font-size: 11px; font-weight: 500; opacity: 0.75; }
 .product-card__body { padding: 20px; }
 .product-card__badge { display: inline-block; font-size: 11px; font-weight: 700; color: var(--color-accent); background: rgba(227,83,41,0.1); padding: 3px 11px; border-radius: 50px; margin-bottom: 10px; }
 .product-card__name { font-size: 17px; font-weight: 700; color: var(--color-text); margin-bottom: 8px; }
 .product-card__text { font-size: 13.5px; color: var(--color-text-light); line-height: 1.8; }
 
-.walkthrough__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 28px; margin-top: 8px; }
+.walkthrough__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; max-width: 960px; margin: 8px auto 0; }
 .walk-step { text-align: center; }
 .phone-mock { width: 190px; max-width: 78%; margin: 0 auto 16px; aspect-ratio: 9 / 19; background: #fff; border: 8px solid var(--color-primary); border-radius: 26px; overflow: hidden; box-shadow: 0 8px 22px rgba(0,0,0,0.12); }
 .phone-mock img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -436,6 +436,14 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .walk-step__num { display: inline-block; font-family: var(--font-en); font-weight: 700; color: var(--color-accent); font-size: 13px; letter-spacing: 0.08em; margin-bottom: 6px; }
 .walk-step__title { font-size: 17px; font-weight: 700; color: var(--color-text); margin-bottom: 8px; }
 .walk-step__text { font-size: 13.5px; color: var(--color-text-light); line-height: 1.85; }
+@media (max-width: 760px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); max-width: 600px; }
+  .walkthrough__grid { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+}
+@media (max-width: 600px) {
+  .product-grid { grid-template-columns: 1fr; max-width: 360px; }
+  .product-gallery { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* =========================================
    想い・企業理念（ブランドストーリー）
